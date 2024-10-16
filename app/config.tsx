@@ -14,7 +14,7 @@ export const CONNECT_LINKS: Array<{
 }> = [
   {
     name: "Email",
-    href: "mailto:mlamine.abdellaoui@aucegypt.edu",
+    href: "mailto:mlamine.abdellaoui at aucegypt dot edu",
     icon: <Inbox className="size-6 " />,
   },
   {
