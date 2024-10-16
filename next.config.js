@@ -1,8 +1,6 @@
-const { withContentlayer } = require("next-contentlayer");
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // This enables static export
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -11,8 +9,8 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/Lamiiine.github.io', // Replace with your repository name if using GitHub Pages
-  assetPrefix: '/Lamiiine.github.io', // Replace with your repository name
+  basePath: '/Lamiiine.github.io',
+  assetPrefix: '/Lamiiine.github.io',
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = nextConfig;
