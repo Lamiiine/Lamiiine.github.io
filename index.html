@@ -3,26 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Lamine's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-in-out;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="p-4 bg-blue-600 text-white">
-    <h1 class="text-2xl font-bold">Lamine's Portfolio</h1>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <h1 class="text-xl font-bold">Lamine</h1>
+      <nav>
+        <ul class="flex space-x-6 text-gray-700">
+          <li><a href="#projects" class="hover:text-gray-900">Projects</a></li>
+          <li><a href="#research" class="hover:text-gray-900">Research</a></li>
+          <li><a href="#experience" class="hover:text-gray-900">Experience</a></li>
+          <li><a href="#contact" class="hover:text-gray-900">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="p-4">
-    <h2 class="text-xl font-bold mb-4">Projects</h2>
-    <ul class="space-y-2">
-      <li>
-        <a href="/projects/snake-game" class="text-blue-500 hover:underline">Snake Game</a>
-      </li>
-      <li>
-        <a href="/projects/calculator" class="text-blue-500 hover:underline">Calculator</a>
-      </li>
-    </ul>
-  </main>
-  <footer class="p-4 text-center text-gray-600">
-    &copy; 2024 Lamine Cherair
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+      <h2 class="text-4xl font-extrabold mb-4 fade-in-up">Innovator. Researcher. Builder.</h2>
+      <p class="text-lg mb-6 fade-in-up">Combining technology, design, and experience to craft impactful solutions.</p>
+      <a href="#projects" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 fade-in-up">Explore My Work</a>
+    </div>
+  </section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 class="text-3xl font-bold text-gray-900 mb-6 fade-in-up">Research</h3>
+            <div class="p-6 bg-gray-50 rounded-lg shadow fade-in-up">
+              <h4 class="text-xl font-bold mb-2">Recognition of Ancient Egyptian Artifacts using a Feature Points
+                Extraction Methodology</h4>
+              
+              <p class="text-sm text-gray-500 mt-2">2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Projects Section with Logos -->
+      <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 class="text-3xl font-bold text-gray-900 mb-6 fade-in-up">Projects</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Hadrat Project -->
+            <div class="bg-white rounded-lg shadow-md p-6 fade-in-up">
+              <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" 
+                   alt="Hadrat Logo" class="w-12 h-12 mb-4">
+              <h4 class="text-xl font-bold mb-2">Hadrat</h4>
+              <p class="text-gray-700">
+                A GPT-like app built with Next.js and open-source models via Huggingface,
+                deployed on Vercel.
+              </p>
+              <p class="text-sm text-gray-500 mt-2">2023</p>
+              <a href="https://hadrat.vercel.app/" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+            </div>
+      
+            <!-- Awesome List of Visa Sponsored Jobs -->
+            <div class="bg-white rounded-lg shadow-md p-6 fade-in-up">
+              <img src="https://cdn-icons-png.flaticon.com/512/3219/3219385.png" 
+                   alt="Awesome List Logo" class="w-12 h-12 mb-4">
+              <h4 class="text-xl font-bold mb-2">Awesome List of Visa Sponsored Jobs</h4>
+              <p class="text-gray-700">
+                A CI/CD pipeline with GitHub Actions to scrape visa-sponsored job listings
+                and generate a Markdown table.
+              </p>
+              <p class="text-sm text-gray-500 mt-2">2023</p>
+              <a href="https://github.com/Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+            </div>
+      
+            <!-- Relocate with Us Project -->
+            <div class="bg-white rounded-lg shadow-md p-6 fade-in-up">
+              <img src="https://cdn-icons-png.flaticon.com/512/1237/1237946.png" 
+                   alt="Relocate with Us Logo" class="w-12 h-12 mb-4">
+              <h4 class="text-xl font-bold mb-2">Relocate with Us</h4>
+              <p class="text-gray-700">
+                A niche job board focused on visa-sponsored jobs offering relocation assistance,
+                helping professionals connect with employers worldwide.
+              </p>
+              <p class="text-sm text-gray-500 mt-2">2023</p>
+              <a href="https://relocate-with-us.github.io/" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-gray-900 mb-6 fade-in-up">Experience</h3>
+      <div class="space-y-6">
+        <!-- Current Experience with Ping Effect -->
+        <div class="p-6 bg-white rounded-lg shadow fade-in-up flex justify-between items-center">
+            <div>
+              <h4 class="text-xl font-bold mb-2">Devops Engineer</h4>
+              <p class="text-sm text-gray-500 mt-2">March 2024 - Present</p>
+            </div>
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            </span>
+          </div>
+        <div class="p-6 bg-white rounded-lg shadow fade-in-up flex justify-between items-center">
+          <div>
+            <h4 class="text-xl font-bold mb-2">Founder, Relocate With Us(niche job board)</h4>
+            <p class="text-sm text-gray-500 mt-2"> January 2023 - Present</p>
+          </div>
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+          </span>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow fade-in-up">
+          <h4 class="text-xl font-bold mb-2">Technical Business Analyst</h4>
+          <p class="text-sm text-gray-500 mt-2"> September 2022 - March 2024</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow fade-in-up">
+            <h4 class="text-xl font-bold mb-2">Teaching Assistant</h4>
+            <p class="text-sm text-gray-500 mt-2"> January 2017 - December 2018</p>
+          </div>
+        <div class="p-6 bg-white rounded-lg shadow fade-in-up">
+          <h4 class="text-xl font-bold mb-2">Teaching Assistant</h4>
+          <p class="text-sm text-gray-500 mt-2"> January 2017 - December 2018</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h3 class="text-3xl font-bold mb-4 fade-in-up">Get in Touch</h3>
+      <p class="mb-6 fade-in-up">I'd love to hear about your projects and ideas. Feel free to reach out!</p>
+      <a href="mailto:lamiiine@gmail.com" class="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 fade-in-up">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-4">
+    <p>&copy; 2024 Lamine Cherair. All rights reserved.</p>
   </footer>
 </body>
 </html>
